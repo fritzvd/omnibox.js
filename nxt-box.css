@@ -134,7 +134,7 @@
 
 .card {
     padding: 15px;
-    width: 370px;
+    /*width: 370px;*/
     margin: 5px 0px 0px 0px;
     position: relative;
     overflow:hidden;
@@ -264,7 +264,7 @@
     padding: 0px;
     top: 0;
     z-index: 9;
-    width: 360px;
+    /*width: 360px;*/
     outline: none;
     position: relative;
     background: none;
