@@ -60,6 +60,6 @@ angular.module('omnibox', [])
       return {
           restrict: 'E',
           link: linker,
-          templateUrl: '/static/source/vendor/nxt-box/templates/omnibox-search.html'
+          templateUrl: '/static/vendor/nxt-box/templates/omnibox-search.html'
       };
   }]);
