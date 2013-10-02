@@ -181,7 +181,7 @@
 }
 
 
-.card select{
+.card select.timeseries{
     width: 300px;
 }
 
