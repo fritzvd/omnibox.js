@@ -1,7 +1,7 @@
 {
   "name": "omnibox",
   "main": "omnibox.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/lizardnxt/omnibox",
   "authors": [
     "fritzvd <fritz.vandeventer@nelen-schuurmans.nl>",
