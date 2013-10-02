@@ -1,8 +1,9 @@
 'use strict';
 
+// NOTE: dit kan natuurlijk niet.
 var templatesUrl = '../templates/';
 
-var app = angular.module('demo-nxt-box', ['omnibox']);
+var app = angular.module('demo-omnibox', ['omnibox']);
 
 app.controller('DemoCtrl', function ($scope){
   $scope.box = {

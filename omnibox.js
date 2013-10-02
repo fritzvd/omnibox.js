@@ -4,7 +4,7 @@ angular.module('omnibox', [])
   .directive('omnibox', ["$compile", "$http", "$templateCache",
     function($compile, $http, $templateCache) {
 
-    // this could probably something else
+    // NOTE: this could probably something else
     var baseUrl = templatesUrl;
 
     var getTemplateLoader = function(contentType) {
@@ -26,8 +26,9 @@ angular.module('omnibox', [])
 
         var promise = loader.success(function(html) {
           // we don't want the dynamic template to overwrite the search box.
-            // this is not supported in jqlite! element.find("#cards").html(html);
-            element('#cards');
+          // NOTE: the reason for selecting the specific child is jqLite does not
+          // support selectors.
+          angular.element(element.children()[1]).html(html);
         }).then(function (response) {
             $compile(element.contents())(scope);
         });
