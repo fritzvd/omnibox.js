@@ -35,7 +35,7 @@ angular.module('omnibox', [])
 
       scope.$watch('box.type', function(){
         replaceTemplate();
-        if ('scope.box.type' !== 'empty'){
+        if (scope.box.type !== 'empty'){
           scope.box.showCards = true;
         } else {
           scope.box.showCards = false;
