@@ -1,4 +1,4 @@
-nxt-box
+omnibox
 =======
 
 omnibox stuff for lizard-nxt.

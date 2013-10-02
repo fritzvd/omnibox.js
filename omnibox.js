@@ -7,7 +7,7 @@ angular.module('omnibox', [])
     // this could probably something else
     var baseUrl = templatesUrl;
 
-    var getTemplate = function(contentType) {
+    var getTemplateLoader = function(contentType) {
       if (contentType === undefined) contentType = 'empty';
 
       var templateLoader,
@@ -22,12 +22,12 @@ angular.module('omnibox', [])
     var linker = function(scope, element, attrs) {
 
       var replaceTemplate = function(){
-        var loader = getTemplate(scope.box.type);
+        var loader = getTemplateLoader(scope.box.type);
 
         var promise = loader.success(function(html) {
           // we don't want the dynamic template to overwrite the search box.
             // this is not supported in jqlite! element.find("#cards").html(html);
-            element[0].children[1].innerHTML = html;
+            element('#cards');
         }).then(function (response) {
             $compile(element.contents())(scope);
         });
