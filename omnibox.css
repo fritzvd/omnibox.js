@@ -202,6 +202,7 @@
 .card h3{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
+    margin-top: 0;
 }
 
 .card h4, .card h5 {
