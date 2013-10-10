@@ -38,20 +38,6 @@ angular.module('omnibox', ["templates-main"])
 
       replaceTemplate();
 
-      // this should probably not be in this directive but in a subdirective.
-      scope.$watch('selected_timeseries', function () {
-        if (scope.selected_timeseries !== undefined){
-
-          scope.data = scope.format_data(scope.selected_timeseries.events);
-          // dit kan zeker nog mooier
-          scope.metadata.title = scope.selected_timeseries.location.name;
-          scope.metadata.ylabel = 'Aciditeit (%)' ; //scope.selected_timeseries.parameter + scope.selected_timeseries.unit.code
-          scope.metadata.xlabel = "Tijd";
-        } else {
-          scope.data = undefined;
-        }
-      });
-
     };
 
   return {
