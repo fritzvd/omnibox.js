@@ -4,6 +4,8 @@ omnibox
 omnibox stuff for lizard-nxt.
 This directive dynamically loads templates from the service based on the type you feed it.
 
+In production the html is compiled to js with html2js using [grunt-html2js](https://github.com/karlgoldstein/grunt-html2js)
+
 Usage
 -----
 
